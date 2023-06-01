@@ -1,0 +1,397 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+header{
+  background-color: #fff;
+  box-shadow: 0px 3px 10px #464646;
+}
+.nav-bar{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 6rem;
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+.logo-img{
+ width: 100px;
+}
+.nav-list{
+  display: flex;
+  align-items: center;
+}
+.nav-list ul{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.nav-item{
+  margin: 0 15px;
+}
+.nav-link{
+  text-decoration: none;
+  font-size: 1.15rem;
+  color: #2270B9;
+  font-weight: 400;
+}
+.login-button button{
+  border: none;
+  background-color: #2270B9;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.login-button button a{
+  text-decoration: none;
+  font-size: 1.15rem;
+  color: #fff;
+  font-weight: 500;
+}
+.mobile-menu-icon{
+  display: none;
+}
+.mobile-menu{
+  display: none;
+}
+
+li:hover{
+  cursor: pointer;
+}
+a:hover{
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px){
+  
+  
+  .nav-bar{
+    padding: 1.5rem 4rem;
+  }
+  .nav-item{
+    display: none;
+  }
+  
+   .login-button {
+        display: none;
+    }
+  
+  .mobile-menu-icon{
+    display: block;
+  }
+  
+  .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+  }
+  
+   .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+  }
+  
+  .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+    aside{
+       height: 35vh;
+       padding: 50px;
+    }
+  .carrossel{
+  height:  30vh;
+  }
+  
+}
+
+
+/*--------------------*/
+
+aside{
+  height: 55vh;
+  padding: 50px;
+}
+.carrossel{
+  height:  50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider{
+  width: 800px;
+  height: 500px;
+  overflow: hidden;
+  position: absolute;
+  border-radius: 12px;
+}
+
+.navigation-bar{
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+}
+
+input{
+  display: none;
+}
+
+.manual-btn{
+  border: 2px solid #fff;
+  padding: 12px;
+  border-radius: 24px;
+  cursor: pointer;
+  height: 4px;
+  width: 4px;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #fff;
+  transition: .4s;
+}
+
+.slides{
+  display: flex;
+  width: 400%;
+  height: 100%;
+}
+.slide{
+  width: 25%;
+  transition: .8s;
+}
+
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+#radio2:checked ~ .first{
+  margin-left: -25%;
+}
+#radio3:checked ~ .first{
+  margin-left: -50%;
+}
+#radio4:checked ~ .first{
+  margin-left: -75%;
+}
+
+/*--------------------*/
+
+main{
+  height: 42vh;
+  padding: 40px;
+}
+.parte1{
+  display: flex;
+  text-align :center;
+  border-style:solid;
+  border-width:5px;
+  border-radius: 20px;
+  border-color: #2270B9;
+  height: 30vh;
+  padding: 20px;
+  gap: 20px;
+}
+.foto{
+  background-color: pink;
+  width: 50%;
+  background-size: cover;
+  cursor: pointer;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.foto:nth-child(1){
+    background-image: url(https://cdn.shopify.com/s/files/1/0416/8083/0620/files/01132022_soc_pinterestboardcoverupdate_LTS_1200x1200_66cb8884-bfed-4d50-8738-cf3efd7b6e57_1024x1024.png?v=1669853262);
+}
+.foto:nth-child(2){
+    background-image: url(https://cdn.shopify.com/s/files/1/0416/8083/0620/articles/soc_mymelodyFOTMbio_12292021_01_1200x1200_55e6a78c-944b-4669-b5e4-4419633ab4b3_1200x.png?v=1642031492);
+}
+.foto:nth-child(3){
+    background-image: url(https://cdn.shopify.com/s/files/1/0416/8083/0620/files/01132022_soc_pinterestboardcoverupdate_PN_1200x1200_d3d2c3bb-d4a4-4bbd-8c5a-0d3739f7923c_480x480.png?v=1648494640);
+}
+.foto:nth-child(4){
+    background-image: url(https://cdn.shopify.com/s/files/1/0416/8083/0620/articles/01132022_soc_pinterestboardcoverupdate_CN_1200x1200_10255920-d001-4530-a20e-3748a1ee61d8_1200x.png?v=1646098286);
+}
+.foto:nth-child(5){
+    background-image: url(https://cdn.shopify.com/s/files/1/0416/8083/0620/articles/01132022_soc_pinterestboardcoverupdate_KR_1200x1200_608d9768-a705-4a45-b838-0fcaef0b7cbc_1200x.png?v=1656537854);
+}
+.foto:nth-child(6){
+    background-image: url(https://cdn.shopify.com/s/files/1/0416/8083/0620/articles/01132022_soc_pinterestboardcoverupdate_KU_1200x1200_1_600x.png?v=1664470992);
+}
+
+
+@media screen and (max-width: 1200px){
+  
+  
+  main{
+  height: 62vh;
+  padding: 40px;
+}
+.parte1{
+
+  display: grid;
+  text-align :center;
+  border-style:solid;
+  border-width:5px;
+  border-radius: 20px;
+  border-color: #2270B9;
+  height: 50vh;
+  padding: 20px;
+  gap: 20px;
+  
+  grid-template-areas:
+    "ft1 ft2 ft3"
+    "ft6 ft5 ft4";
+}
+.foto{
+  background-color: pink;
+  width: 100%;
+  background-size: cover;
+  cursor: pointer;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+  
+  .foto:nth-child(1){
+    grid-area: ft1;
+    background-image: url(https://cdn.shopify.com/s/files/1/0416/8083/0620/files/01132022_soc_pinterestboardcoverupdate_LTS_1200x1200_66cb8884-bfed-4d50-8738-cf3efd7b6e57_1024x1024.png?v=1669853262);
+}
+.foto:nth-child(2){
+  grid-area: ft2;
+    background-image: url(https://cdn.shopify.com/s/files/1/0416/8083/0620/articles/soc_mymelodyFOTMbio_12292021_01_1200x1200_55e6a78c-944b-4669-b5e4-4419633ab4b3_1200x.png?v=1642031492);
+}
+.foto:nth-child(3){
+  grid-area: ft3;
+    background-image: url(https://cdn.shopify.com/s/files/1/0416/8083/0620/files/01132022_soc_pinterestboardcoverupdate_PN_1200x1200_d3d2c3bb-d4a4-4bbd-8c5a-0d3739f7923c_480x480.png?v=1648494640);
+}
+.foto:nth-child(4){
+  grid-area: ft4;
+    background-image: url(https://cdn.shopify.com/s/files/1/0416/8083/0620/articles/01132022_soc_pinterestboardcoverupdate_CN_1200x1200_10255920-d001-4530-a20e-3748a1ee61d8_1200x.png?v=1646098286);
+}
+.foto:nth-child(5){
+  grid-area: ft5;
+    background-image: url(https://cdn.shopify.com/s/files/1/0416/8083/0620/articles/01132022_soc_pinterestboardcoverupdate_KR_1200x1200_608d9768-a705-4a45-b838-0fcaef0b7cbc_1200x.png?v=1656537854);
+}
+.foto:nth-child(6){
+  grid-area: ft6;
+    background-image: url(https://cdn.shopify.com/s/files/1/0416/8083/0620/articles/01132022_soc_pinterestboardcoverupdate_KU_1200x1200_1_600x.png?v=1664470992);
+}
+  
+}
+
+/*--------------------*/
+
+
+footer{
+  background-color: #F8DCE1;
+  width: 100vw;
+  height: 60hv;
+}
+.banner{
+  width: 100vw;
+  height: 40vh;
+  background-image: url(https://photoxshop.ir/collagemaker/wp-content/uploads/2022/09/pink-hello-kitty-wallpaper-37.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.trasparencia1{
+  width: 100vw;
+  height: 30vh;
+  background: linear-gradient(to top, transparent 30%, rgba(255, 255, 255, 1) 100%);
+}
+.trasparencia2{
+  width: 100vw;
+  height: 10vh;
+   background: linear-gradient(to bottom, transparent 50%, rgba(247, 220, 225, 1) 100%);
+}
+
+/*--------------------*/
+.conteudo{
+  display: flex; 
+  justify-content: center;
+}
+
+.footer-parte1{
+  padding-top: 40px;
+  padding-left: 20px;
+}
+.footer-divisoria{
+  grid-area: div;
+  height: 10px;
+  width: 12rem;
+  background-color: pink;
+  border-radius: 50px;
+}
+.footer-social{
+  grid-area: social;
+  padding-left: .6rem;
+  padding-top: 1rem;
+}
+
+
+.footer-parte2{
+  padding: 30px;
+  border-radius: 30px;
+}
+.texto-parte2{
+  display: flex;
+  gap: 40px;
+  padding: 70px;
+  border-radius: 30px;
+  background-color: pink;
+}
+ul{
+  list-style: none;
+  text-decoration: none;
+}
+li{
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #F8DCE1;
+}
+.titulo{
+  font-size: 2rem;
+}
+
+
+li:houver{
+  cursor: pointer;
+}
+
+
+
+/*--------------------*/
+
